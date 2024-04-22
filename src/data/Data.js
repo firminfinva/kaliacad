@@ -2,7 +2,9 @@ import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
 import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
-import wkmrdc from "../images/wkmrdc.png";
+import wkmRdcLogo from "../images/wkmrdc.png";
+import wmChLogo from "../images/WikimediaCHLogo.svg";
+import wmIgbo from "../images/wmIgbo.svg";
 
 export const pages = [
   // {
@@ -46,7 +48,7 @@ export const dataCequeNousFaison = [
     title: "DU MENTORAT",
     description:
       "pour accompagner efficacement dans la contribution open source",
-    image: image,
+    image,
   },
   {
     title: "DES HACK-A-THONS",
@@ -55,10 +57,32 @@ export const dataCequeNousFaison = [
   },
 ];
 
-export const dataRemerciement = [
+export const supporters = [
   {
-    title: "WIKIMEDIA RDC",
-    image: wkmrdc,
+    name: "Wikimedia CH",
+    logo: wmChLogo,
+  },
+  {
+    name: "Wikimedia RDC",
+    logo: wkmRdcLogo,
+  },
+];
+
+export const GoldSupport = [
+  {
+    name: "Wikimedia RDC",
+    logo: wkmRdcLogo,
+  },
+];
+
+export const PlatiumSupport = [
+  {
+    name: "Wikimedia Igbo",
+    logo: wmIgbo,
+  },
+  {
+    name: "Wikimedia CH",
+    logo: wmChLogo,
   },
 ];
 
@@ -138,4 +162,25 @@ export const dataCommunity = [
   { title: " UpComing Events", id: 2 },
   { title: " Join Our Telegram Community ", id: 3 },
   { title: " Follow Use on Social Media", id: 4 },
+];
+
+export const datafaq = [
+  {
+    id: 1,
+    question: "first question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
+  {
+    id: 2,
+    question: "second question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
+  {
+    id: 3,
+    question: "thirst question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
 ];

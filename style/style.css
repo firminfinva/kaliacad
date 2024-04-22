@@ -1,0 +1,380 @@
+* {
+  font-family: "Montserrat" !important;
+}
+
+body {
+  font-size: 18px;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: rgba(26, 36, 38, 0.5);
+  min-height: 5em;
+  font-weight: 600;
+  background-color: rgba(26, 36, 38, 0.5);
+  min-height: 5em;
+  font-weight: 600;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  background: #00889a !important;
+  color: floralwhite;
+  min-height: 24rem;
+  border-radius: 0;
+  margin: 0px auto;
+  background: #00889a !important;
+  color: floralwhite;
+  min-height: 24rem;
+  border-radius: 0;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  min-height: 400px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.headerOpenSource,
+.jumbotron h3 {
+  font-style: italic;
+}
+
+#theIssue_detail {
+  margin-top: 4em;
+}
+
+#ourOrganization.image_wrapper {
+  width: 45em;
+}
+
+#ourOrganization img {
+  height: 38em;
+  width: 100%;
+}
+
+#ourSolution-bckgnd {
+  background: #00889a !important;
+  color: floralwhite;
+}
+
+#ourSolution-imgWrapper img {
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  border: 2px solid floralwhite;
+}
+
+#ourActivities_detail h5 {
+  color: #00889a;
+  margin-top: 1.8em;
+}
+
+#ourActivities_detail .fa {
+  font-size: 3.5em;
+  margin-top: 1em;
+}
+/*---------------presentation--------------*/
+.presentation {
+  margin: 120px 0 50px 0px;
+  height: auto;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+
+  .notaclass {
+    display: none;
+  }
+  div {
+    width: 50%;
+    padding-right: 10%;
+    box-sizing: border-box;
+  }
+  div:first-of-type {
+    .notaclass {
+      display: none;
+    }
+    .firstimg,
+    img {
+      width: 200px;
+      height: 80px;
+      margin-left: -30px;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+    }
+    p {
+      margin: 30px 0px;
+    }
+  }
+  div:last-of-type {
+    height: 80vh;
+    padding: 5vh 0 0 0;
+
+    .notaclass {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .presentation {
+    z-index: 30;
+    flex-direction: column;
+    .notaclass {
+      display: none;
+    }
+    div {
+      width: 100%;
+      padding-right: 1%;
+    }
+  }
+}
+/*-------------common element--------------*/
+.title {
+  font-size: 50px;
+  font-weight: 300;
+}
+/*---------------scholarship , how it works-------------- */
+.scholarship {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7vw;
+}
+.how-it-work {
+  height: auto;
+  width: auto;
+  color: black;
+  margin: 60px 0;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    div {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 50vh;
+      overflow: hidden;
+      background-color: rgb(3, 3, 73);
+      border-radius: 7px;
+      padding: 45px 35px;
+      box-sizing: border-box;
+
+      .number_title {
+        font-size: 40px;
+        color: yellow;
+      }
+      div {
+        width: 100%;
+        padding: 0;
+        height: auto;
+
+        .title_box {
+          color: white;
+          font-size: 24px;
+        }
+        p {
+          margin-top: 30px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .scholarship {
+    margin: 0 30px;
+  }
+  .how-it-work {
+    div {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+/*--------------timeline------------------*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+  .notaclass {
+    display: none;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    .notaclass {
+      display: none;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 12px 20px;
+      background-color: rgb(214, 223, 233);
+      span {
+        height: 100%;
+        color: blue;
+        font-size: 30px;
+      }
+      p {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      p:first-of-type {
+        width: 30%;
+        color: blue;
+      }
+      p:last-of-type {
+        border-left: 1px solid blue;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .timeline {
+    div {
+      div {
+        flex-direction: column;
+        p:last-of-type {
+          border-left: 0px solid blue;
+          border-top: 2px solid blue;
+        }
+      }
+    }
+  }
+}
+/*---------------about----------------------*/
+.about {
+  height: auto;
+  width: 98.6vw;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 70px 50px 70px 7vw;
+  background: linear-gradient(to bottom right, #4550e0, #b563ec);
+  margin-left: -7vw;
+  margin-bottom: 5vh;
+  color: white;
+
+  .about-logo {
+    background-color: white;
+    border-radius: 3px;
+    border-top-left-radius: 25px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+}
+:root {
+  --question-height: 50px;
+}
+/*----------faq--------------------------*/
+
+.faq {
+  .notaclass {
+    display: none;
+  }
+  div {
+    /* margin: 2vh 0; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4vh;
+    box-sizing: border-box;
+
+    .notaclass {
+      display: none;
+    }
+    .expanded {
+      min-height: var(--question-height) !important;
+      background-color: rgb(238, 237, 237);
+    }
+    .notexpanded {
+      max-height: var(--question-height) !important;
+      overflow: hidden;
+      width: 47%;
+      border: 1px solid black;
+
+      div {
+        border: 0px solid black;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        height: var(--question-height);
+        align-items: center;
+        overflow: hidden;
+        width: 90%;
+        justify-content: space-between;
+        button {
+          height: 15px;
+        }
+      }
+      p {
+        padding: 10px 20px;
+        background-color: white;
+      }
+    }
+  }
+}
+@media (max-width: 950px) {
+  .faq {
+    div {
+      div {
+        width: 100%;
+
+        .notaclass {
+          display: none;
+        }
+        div {
+          padding: 0;
+          align-items: center;
+          height: 30px;
+
+          h5 {
+            margin: 0;
+            padding: 0;
+          }
+        }
+        div,
+        p {
+          padding: 0px 0px;
+        }
+      }
+    }
+  }
+}
+/*-------------footer--------------------*/
+footer {
+  color: floralwhite;
+  background-color: #233033;
+  min-height: 4em;
+}
