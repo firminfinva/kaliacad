@@ -46,7 +46,9 @@ function Scholarship() {
         <StaticImage
           alt="Students in the classrooms"
           src="../images/students.jpg"
+
         />
+
       </section>
 
       <section className="how-it-work">
@@ -116,9 +118,8 @@ function Scholarship() {
         <div>
           {data?.map((quiz, index) => (
             <div
-              className={`${
-                expandedIndex === index ? "expanded" : "notexpanded"
-              }`}
+              className={`${expandedIndex === index ? "expanded" : "notexpanded"
+                }`}
               key={index}
               onClick={() => handleClick(index)}
             >
