@@ -1,7 +1,6 @@
 import {
   Card,
   CardActionArea,
-  CardContent,
   CardMedia,
   Grid,
   Stack,
@@ -61,6 +60,7 @@ const PlatiumSupports = PlatiumSupport.map((supporter, index) => (
 function supporters() {
   return (
     <Layout>
+      {/* <Header /> */}
       <Header />
       <Grid
         container

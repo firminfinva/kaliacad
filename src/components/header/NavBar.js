@@ -61,22 +61,7 @@ function NavBar() {
               marginLeft: 45,
               background: "none",
             }}
-          >
-            <img
-              src={kalibackground}
-              alt="Kali academy"
-              style={{
-                width: "auto",
-                height: 80,
-                display: "block" /* Supprime l'espace réservé sous l'image */,
-                margin: "0 auto",
-                objectFit: "contain",
-                cursor: "pointer",
-                background: "none",
-              }}
-              onClick={() => navigate("/")}
-            />
-          </div>
+          ></div>
 
           <Box
             sx={{
@@ -149,24 +134,9 @@ function NavBar() {
               // marginLeft: 45,
               background: "none",
             }}
-          >
-            <img
-              src={kalibackground}
-              alt="Kali academy"
-              style={{
-                width: "auto",
-                height: 80,
-                display: "block" /* Supprime l'espace réservé sous l'image */,
-                margin: "0 auto",
-                objectFit: "cover",
-                cursor: "pointer",
-                background: "none",
-              }}
-              onClick={() => navigate("/")}
-            />
-          </div>
+          ></div>
 
-          <Box
+          {/* <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "flex", justifyContent: "center" },
@@ -175,7 +145,7 @@ function NavBar() {
             <IconButton size="large" onClick={() => OpenDialog()}>
               <Menu fontSize="large" />
             </IconButton>
-          </Box>
+          </Box> */}
         </div>
         <Stack
           justifyContent={"center"}
@@ -217,7 +187,7 @@ function NavBar() {
           </Typography>
         </Stack>
       </Grid>
-      <DrawerLaningPage open={open} setOpen={() => setOpen(!open)} />
+      {/* <DrawerLaningPage open={open} setOpen={() => setOpen(!open)} /> */}
     </div>
   );
 }

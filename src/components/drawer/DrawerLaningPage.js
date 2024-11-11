@@ -9,13 +9,18 @@ function DrawerLaningPage({ open, setOpen }) {
   //
 
   const gotHomeTitleMenu = (e) => {
-    if (e === 1) {
+    if (e.id === 1) {
       navigate("/");
-    } else if (e === 3) {
-      navigate("/blog");
-    } else if (e === 4) {
-      navigate("/publieoffre");
+    } else if (e.id === 5) {
+      navigate(`${e.path}`);
+    } else {
+      navigate(`${e.path}`);
     }
+    //  else if (e === 3) {
+    //   navigate("/blog");
+    // } else if (e === 4) {
+    //   navigate("/publieoffre");
+    // }
   };
 
   return (
@@ -56,7 +61,7 @@ function DrawerLaningPage({ open, setOpen }) {
               fontSize: 12,
               // background: "gray",
             }}
-            onClick={() => gotHomeTitleMenu(page.id)}
+            onClick={() => gotHomeTitleMenu(page)}
           >
             {page.title}
           </Button>

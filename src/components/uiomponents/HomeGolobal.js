@@ -4,6 +4,7 @@ import FooterFin from "../footer/HomeFooter";
 import About from "./About";
 import WeDo from "./WeDo";
 import Header from "../header/Header";
+import MainHero from "../header/MainHero";
 import ThankYou from "./ThankYou";
 import Layout from "../../theme/layout";
 
@@ -30,6 +31,7 @@ function HomeGolobal() {
       ) : (
         <div>
           <Header />
+          <MainHero />
           <About />
           <WeDo />
           <Homeaf />

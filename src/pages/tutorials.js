@@ -1,7 +1,8 @@
 import { Grid, Link } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Header from "../components/header/Header";
 import Layout from "../theme/layout";
+import Header from "../components/header/Header";
+import MainHero from "../components/header/MainHero";
 import "./../../style/style.css";
 import LeftSideTuto from "../components/tutorials/leftside/leftside";
 import RightSideTuto from "../components/tutorials/rightside/rightside";
@@ -82,6 +83,7 @@ function Tutorials() {
   return (
     <Layout>
       <Header />
+      <MainHero />
       <Grid container sx={{ overflow: "hidden" }}>
         <Grid item xs={false} sm={false} md={2} lg={1} xl={2}></Grid>
         <Grid item xs={12} sm={12} md={8} lg={10} xl={8} mt={2}>

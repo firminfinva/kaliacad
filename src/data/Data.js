@@ -7,26 +7,12 @@ import wmChLogo from "../images/WikimediaCHLogo.svg";
 import wmIgbo from "../images/wmIgbo.svg";
 
 export const pages = [
-  // {
-  //   id: 1,
-  //   title: "Acceuil",
-  //   path: "/",
-  // },
-  {
-    id: 2,
-    title: "Soutenez-nous",
-    path: "",
-  },
-  // {
-  //   id: 3,
-  //   title: "Blog",
-  //   path: "/blogs",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Offre",
-  //   path: "/publieoffre",
-  // },
+  // { id: 1, title: "Soutenez-nous", path: "" },
+  { id: 1, title: "Accueil", path: "/" },
+  { id: 2, title: "Supporters", path: "/supporters" },
+  { id: 3, title: "Scholarship", path: "/scholarship" },
+  { id: 4, title: "Tutorials", path: "/tutorials" },
+  { id: 5, title: "Join Us", path: "https://t.me/c/2179811245/1" },
 ];
 export const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
